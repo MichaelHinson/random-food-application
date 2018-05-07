@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Alabaster_Random_Food" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Fjv-Qf-xMq">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="k3i-Ww-C03">
+                                        <rect key="frame" x="87" y="0.0" width="169.5" height="593"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ped-if-euN">
+                                                <rect key="frame" x="0.0" y="0.0" width="169.5" height="543.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dnl-Pn-rzM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GNF-2o-Dlm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="dNW-0r-mFR"/>
+                                                                    <action selector="toggleSwitchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="v2g-D8-2PM"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toggle All" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VXH-ex-a4X">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="D9L-YE-oMy">
+                                                        <rect key="frame" x="0.0" y="69.5" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N6h-2Q-3lb" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="mov-yn-zgy"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="American" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jGQ-f4-2o3">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="y0o-fO-IeB">
+                                                        <rect key="frame" x="0.0" y="139" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XaS-eh-C13" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="lrw-TQ-spA"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Asian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyN-9j-86h">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="fbh-lq-g4v">
+                                                        <rect key="frame" x="0.0" y="208.5" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="shc-JD-cAE" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="I74-CP-lKO"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPH-w5-9k5">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="FDk-ST-JWa">
+                                                        <rect key="frame" x="0.0" y="278" width="169.5" height="57"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmW-Bm-15w" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="24M-WS-rjY"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fast Food" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEd-QJ-0ay">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="934-4s-WaK">
+                                                        <rect key="frame" x="0.0" y="347" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F92-fz-s1m" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="c5X-Hk-9nd"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mexican" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbj-bH-pwJ">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="zT5-gk-Tw6">
+                                                        <rect key="frame" x="0.0" y="416.5" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mma-4B-bLI" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Nx5-bj-cGR"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ZV-J9-Mha">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="K7Z-Hv-asC">
+                                                        <rect key="frame" x="0.0" y="486" width="169.5" height="57.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wa7-6W-LFB" customClass="UISwitchWithArray" customModule="Alabaster_Random_Food" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="51" height="57.5"/>
+                                                                <connections>
+                                                                    <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="FPB-cg-onR"/>
+                                                                </connections>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqZ-X0-DF3">
+                                                                <rect key="frame" x="89" y="0.0" width="80.5" height="57.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nU-Jg-4r1">
+                                                <rect key="frame" x="18.5" y="567.5" width="132.5" height="25.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25.5" id="pq3-2W-cmi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2K-Ry-adO">
+                                        <rect key="frame" x="73" y="608" width="197" height="39"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="39" id="fwf-NO-0c0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Find Your Restaurant">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rollAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="COE-dX-3E4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Corner Corgi" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-nK-brb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Er-nK-brb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="12V-Fh-QK8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fjv-Qf-xMq" secondAttribute="trailing" id="6NC-Ov-mUp"/>
+                            <constraint firstAttribute="trailing" secondItem="1Er-nK-brb" secondAttribute="trailing" id="7B0-14-A4i"/>
+                            <constraint firstItem="Fjv-Qf-xMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="I1y-Z9-khu"/>
+                            <constraint firstAttribute="bottom" secondItem="1Er-nK-brb" secondAttribute="bottom" id="aCs-jq-dVm"/>
+                            <constraint firstItem="Fjv-Qf-xMq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cmr-zd-yjM"/>
+                            <constraint firstItem="1Er-nK-brb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k6a-p4-bFH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fjv-Qf-xMq" secondAttribute="bottom" id="nRf-oh-UZZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="americanSwitch" destination="N6h-2Q-3lb" id="wvK-h3-8vq"/>
+                        <outlet property="asianSwitch" destination="XaS-eh-C13" id="LZx-dS-DWC"/>
+                        <outlet property="fastFoodSwitch" destination="nmW-Bm-15w" id="GZZ-Ik-OPs"/>
+                        <outlet property="healthySwitch" destination="Mma-4B-bLI" id="gov-id-0MQ"/>
+                        <outlet property="italianSwitch" destination="shc-JD-cAE" id="FUf-SK-S37"/>
+                        <outlet property="mexicanSwitch" destination="F92-fz-s1m" id="bKg-8k-Ikg"/>
+                        <outlet property="myImageView" destination="1Er-nK-brb" id="Kxr-fi-xjO"/>
+                        <outlet property="otherSwitch" destination="wa7-6W-LFB" id="Q4n-BG-sNN"/>
+                        <outlet property="resultsLabel" destination="1nU-Jg-4r1" id="lui-B3-3Wo"/>
+                        <outlet property="rollButton" destination="S2K-Ry-adO" id="dLU-1Z-eYh"/>
+                        <outlet property="toggleAllSwitch" destination="GNF-2o-Dlm" id="Kew-qZ-mTX"/>
+                        <outletCollection property="switchArray" destination="N6h-2Q-3lb" collectionClass="NSMutableArray" id="G1v-vU-3US"/>
+                        <outletCollection property="switchArray" destination="XaS-eh-C13" collectionClass="NSMutableArray" id="P87-pS-hgN"/>
+                        <outletCollection property="switchArray" destination="shc-JD-cAE" collectionClass="NSMutableArray" id="6em-nZ-ABF"/>
+                        <outletCollection property="switchArray" destination="nmW-Bm-15w" collectionClass="NSMutableArray" id="CMP-OR-gvM"/>
+                        <outletCollection property="switchArray" destination="F92-fz-s1m" collectionClass="NSMutableArray" id="cGS-59-Eqq"/>
+                        <outletCollection property="switchArray" destination="Mma-4B-bLI" collectionClass="NSMutableArray" id="04I-cY-FJx"/>
+                        <outletCollection property="switchArray" destination="wa7-6W-LFB" collectionClass="NSMutableArray" id="Svk-uw-AlD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-80.799999999999997" y="135.38230884557723"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Corner Corgi" width="1024" height="768"/>
+    </resources>
+</document>
